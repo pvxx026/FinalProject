@@ -1,0 +1,24 @@
+READ AND WRITE "nama_pasien" with string
+READ AND WRITE "umur" with number
+READ AND WRITE "jenis_kelamin" with string
+READ AND WRITE "alamat" with string
+READ AND WHITE "nomor_telepon" with number
+READ AND WRITE "keluhan" with string
+READ AND WRITE "form_pendaftaran" with string
+STORE "nama_pasien" with "yoga"
+STORE "umur" with 24
+STORE "jenis_kelamin" with  "laki-laki"
+STORE "alamat" with "Kota Bandung"
+STORE "nomor_telepon" with 024671
+STORE "keluhan" with "batuk"
+STORE "form_pendaftaran" with "rawat inap"
+
+PROCEDUR Pendaftaran (data)
+	FOR
+		IF "data", "nama_pasien", "umur", "jenis_kelamin", "alamat", "nomor_telepon", "keluhan" already complete "form_pendaftaran"
+			PRINT "Mencetak data boooking rawat inap"
+		Else
+			PRINT "Mengisi ulang form pendaftaran"
+	END FOR
+END PROCEDUR
+PRINT data
